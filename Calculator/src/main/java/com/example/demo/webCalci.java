@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class webCalci {
 	@GetMapping("calc/{operations}/{a}/{b}/{c}")
-	int calculations(@PathVariable String operations, @PathVariable int a, @PathVariable int b, @PathVariable int c) {
+	int calculations(@PathVariable String operations, @PathVariable int a, @PathVariable int b) {
 		if (operations.equals("add")) {
-			return a + b +c;
+			return a + b ;
 		}
 		if (operations.equals("sub")) {
 			return a - b;
