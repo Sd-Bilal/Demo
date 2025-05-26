@@ -9,7 +9,7 @@ public class webCalci {
 	@GetMapping("calc/{operations}/{a}/{b}/{c}")
 	int calculations(@PathVariable String operations, @PathVariable int a, @PathVariable int b) {
 		if (operations.equals("add")) {
-			return a + b ;
+			return a - b ;
 		}
 		if (operations.equals("sub")) {
 			return a - b;
